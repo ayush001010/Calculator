@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #E2BBE9;
+}
+
+body{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: auto;
+    max-width: 58vb;
+    height: auto;
+    padding: 3vh;
+    background-color: #1A2130;
+    border-radius: 1.5vh;
+    box-shadow:  
+    0px 0px 1px #000000, 
+    0px 0px 1px #000000, 
+    0px 0px 8px #000000, 
+    1px 5px 5px rgba(255, 255, 255, 0.2);
+}
+
+.container textarea{
+    width: 100%;
+    height: 18vh;
+    margin-bottom: 1vh;
+    font-size: 8vh;
+    caret-color: transparent; /* Makes the cursor transparent */
+    text-align: right; /* Ensures text alignment to the right */
+    resize: none; /* Disables the resizing option */
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+}
+
+.btn_box1 button{ 
+    width: 10vh;
+    height: 10vh;
+    margin: 1vh;
+    text-align: center;
+    font-size: 3.8vb;
+    color: #D4ADFC;
+    border-radius: 50%;
+}
+.btn_box2 button{ 
+    width: 10vh;
+    height: 10vh;
+    margin: 1vh;
+    text-align: center;
+    font-size: 3.8vb;
+    border-radius: 50%;
+}
+.btn_box3 button{ 
+    width: 10vh;
+    height: 10vh;
+    margin: 1vh;
+    text-align: center;
+    font-size: 3.8vb;
+    border-radius: 50%;
+}
+.btn_box4 button{ 
+    width: 10vh;
+    height: 10vh;
+    margin: 1vh;
+    text-align: center;
+    font-size: 3.8vb;
+    border-radius: 50%;
+}
+.btn_box5 button{ 
+    width: 10vh;
+    height: 10vh;
+    margin: 1vh;
+    text-align: center;
+    font-size: 3.8vb;
+    border-radius: 50%;
+}
+
+#product, #minus, #plus{
+    color: #D4ADFC;
+}
+
+#equal{
+    border: none;
+    background-color: #D4ADFC;
+    color: #fff;
+    box-shadow:  
+    0px 0px 1px #000000, 
+    0px 0px 1px #000000, 
+    0px 0px 8px #000000, 
+    1px 5px 5px rgba(255, 255, 255, 0.2);
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    font-weight: 550;
+    background-color: transparent;
+    box-shadow:  
+    0px 0px 1px #000000, 
+    0px 0px 1px #000000, 
+    0px 0px 8px #000000, 
+    1px 5px 5px rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+}
+button:hover{
+    background-color: #dbdfe0;
+}
+
+/* Responsive Styles */
+
+/* For small tablets (landscape and portrait, 600px and above) */
+@media (max-width: 900px) and (min-width: 600px) {
+    .container {
+        padding: 2.5vh;
+        max-width: 85vw; /* Slightly smaller width */
+    }
+
+    .container textarea {
+        font-size: 3.5vh;
+        height: 16vh;
+    }
+
+    .btn_box1 button, 
+    .btn_box2 button, 
+    .btn_box3 button, 
+    .btn_box4 button, 
+    .btn_box5 button {
+        width: 9vh;
+        height: 9vh;
+        font-size: 3.5vh;
+    }
+}
+
+/* For tablets (portrait and landscape, 768px and below) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90vw; /* Slightly smaller width */
+    }
+
+    .container textarea {
+        font-size: 3vh;
+        height: 14vh;
+    }
+
+    .btn_box1 button, 
+    .btn_box2 button, 
+    .btn_box3 button, 
+    .btn_box4 button, 
+    .btn_box5 button {
+        width: 8vh;
+        height: 8vh;
+        font-size: 3vh;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    body {
+        padding-top: 10vh;
+    }
+
+    .container {
+        width: 90%;
+    
+    }
+
+    .container textarea {
+        font-size: 5vh;
+        height: 12vh;
+    }
+
+    .btn_box1 button, 
+    .btn_box2 button, 
+    .btn_box3 button, 
+    .btn_box4 button, 
+    .btn_box5 button {
+        width: 7vh;
+        height: 7vh;
+        font-size: 2.5vh;
+    }
+}
